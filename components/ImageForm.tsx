@@ -15,7 +15,7 @@ interface ImageFormProps {
     onImport: (file: File) => void;
 }
 
-const MAX_FILE_SIZE_MB = 2;
+const MAX_FILE_SIZE_MB = 5;
 const LORA_COUNT = 6;
 
 const initialFormData: CollectionItemFormData = {
@@ -184,7 +184,7 @@ const ImageForm: React.FC<ImageFormProps> = ({ editingItem, onSubmit, onCancelEd
                             <div className="flex flex-col items-center justify-center pt-5 pb-6">
                                 <i className="fa-solid fa-cloud-arrow-up text-4xl text-gray-400 mb-3"></i>
                                 <p className="mb-2 text-sm text-gray-500"><span className="font-semibold">Klik untuk upload</span> atau drag & drop</p>
-                                <p className="text-xs text-gray-500">PNG, JPG (Max. 2MB)</p>
+                                <p className="text-xs text-gray-500">PNG, JPG (Max. 5MB)</p>
                             </div>
                             <input id="imageInput" type="file" accept="image/*" className="hidden" onChange={handleImageChange} required={!editingItem} />
                         </label>
