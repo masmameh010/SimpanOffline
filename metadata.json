@@ -1,0 +1,5 @@
+{
+  "name": "IMAJINASI LOKAL SIMPAN PROMPT OFFLINE",
+  "description": "An application to store and manage your AI-generated images with their prompts and parameters. It supports various platforms like Tensor, Midjourney, and Gemini, using IndexedDB for local storage.",
+  "requestFramePermissions": []
+}
